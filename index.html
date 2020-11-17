@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massimo De Nittis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+    <h1 id="home">Massimo <i class="fas fa-power-off"></i> De Nittis</h1>
+    <h2>Freelance consultant</h2>
+    <a href="https://github.com/mdenitti" class="gitbutton" target = "_blank">Mijn GITHUB pagina</a>
+    <a href="#work" class="gitbutton">Werkervaring</a>
+    <a href="#education" class="gitbutton">Opleidingen</a>
+    <a href="#hobby" class="gitbutton">Vrije tijd</a>
+    <a href="#contact" class="gitbutton">Zeg hallo</a>
+ 
+    <div class="heading">
+        <h4>
+            <i class="fas fa-keyboard"></i>
+            Consulting, DevOps, Front-end, Back-end, DBA, PEN testing
+        </h4>
+    </div>
+
+    <div class="headingsub">
+        <h3 id="work">Werkervaring</h3>
+        <div class="content">
+            Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten.
+        </div>
+        <!-- Automatische afbeeldingen met placeholders... -->
+        <img class="stock" src="https://picsum.photos/600/300">
+    </div>
+
+    <div class="headingsub"> 
+        <h3 id="education">Opleidingen</h3>
+        <div class="content">
+            Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten.
+        </div>
+        <img class="stock" src="https://picsum.photos/600/300">
+    </div>
+    <div class="headingsub"> 
+        <h3 id="hobby">Vrije tijd</h3>
+        <div class="content">
+            Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten.
+        </div>
+        <img class="stock" src="https://picsum.photos/600/300">
+    </div>
+
+    <div class="topbutton">
+        
+        <i style="font-size: 30px;" onclick="topFunction()" id="myBtn" class="fas fa-arrow-up"></i>
+    
+    </div>
+</body>
+
+<script>
+    //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+</html>
